@@ -1,0 +1,105 @@
+:root {
+    --background-color-light: #F0EEEE; 
+    --background-color-dark: #E3C7C4; 
+    --text-color-dark: #3D3B2E; 
+    --text-color-orange: #E74316; 
+}
+*{
+    box-sizing: border-box;
+    font-size: 100%;
+    font-family: 'neue-haas-grotesk-display-pro', sans-serif; 
+    scroll-behavior: smooth;
+}
+
+/*MOBILE*/ 
+@media screen and (min-width: 0px) {
+    .logo {
+        display: block; 
+        width: 50%; 
+        height: auto; 
+        margin: 10px; 
+        background-color: transparent;
+    }
+    body {
+        background-color: var(--background-color-dark);
+    }
+    .nav-bar {
+        display: flex; 
+        flex-flow: column nowrap; 
+    }
+    .search-bar {
+        width: 90%; 
+        height: auto; 
+        margin: 0 auto; 
+        padding: 15px; 
+        border-radius: 25px;
+        border: 1px solid var(--text-color-dark); 
+        background-color: transparent;
+    }
+    .recipe-subheading {
+        color: var(--text-color-orange);
+        font: bold 20px/10px  'neue-haas-grotesk-display-pro', sans-serif; 
+        display: block; 
+        margin: 40px 20px 0; 
+    }
+    img {
+        width: 80vw; 
+        height: auto;
+        border-radius: 25px;
+        margin: 25px 25px 5px 25px; 
+    }
+    .food-text-heading {
+        text-align: center; 
+        font: bold 18px/18px 'neue-haas-grotesk-display-pro', sans-serif; 
+    }
+    .food-text-subheading, .credit {
+        text-align: center; 
+        font: normal 13px/18px  'neue-haas-grotesk-display-pro', sans-serif; 
+    }
+    
+}
+/* TABLET  */
+@media screen and (min-width:768px) { 
+    img {
+        width: 30vw; 
+        display: block; 
+    }
+    .recipe-menu {
+        display: flex; 
+        flex-flow: row nowrap; 
+    }
+    .search-bar {
+        width: 50%; 
+    }
+}
+/* DESKTOP */
+@media screen and (min-width: 1440px) {
+    .logo {
+        width: 20%; 
+        padding: 20px; 
+    }
+    img {
+        width: 25vw; 
+    }
+    .recipe-menu {
+        justify-content: space-around; 
+        margin: 20px; 
+    }
+    .search-bar {
+        width: 60%; 
+        padding: 20px; 
+        font: normal 16px/18px  'neue-haas-grotesk-display-pro', sans-serif; 
+    }
+    .recipe-subheading {
+        font: bold 22px/18px 'neue-haas-grotesk-display-pro', sans-serif; 
+        padding: 10px 60px; 
+        margin: 20px 10px; 
+    }
+    .food-text-heading {
+        font: bold 22px/18px 'neue-haas-grotesk-display-pro', sans-serif; 
+    }
+    .food-text-subheading, .credit {
+        font: normal 16px/18px  'neue-haas-grotesk-display-pro', sans-serif; 
+    }
+    
+}
