@@ -1,0 +1,124 @@
+:root {
+    --background-color-light: #E9E6D5; 
+    --background-color-dark: #E3C7C4; 
+    --text-color-dark: #3D3B2E; 
+    --text-color-orange: #E74316; 
+}
+*{
+    box-sizing: border-box;
+    font-size: 100%;
+    font-family: 'clifton', serif; 
+    font-family: 'Inter', sans-serif;
+    font-family: 'degular', sans-serif;
+    scroll-behavior: smooth;
+    margin: 10px; 
+}
+@media screen and (min-width: 0px) {
+    body {
+        background-color: var(--background-color-dark);
+    }
+    .title {
+        font: normal 26px/36px 'Inter', sans-serif; 
+        color: var(--text-color-orange); 
+        margin: 0 10px;
+    }
+    .change-font {
+        font: italic 26px/36px 'clifton', serif; 
+        display: inline; 
+        color: var(--text-color-orange); 
+    }
+    span {
+        display: block; 
+        font: normal 16px/26px  'Inter', sans-serif; 
+        color: var(--text-color-dark); 
+    }
+    .text {
+        font: normal 16px/26px 'Inter', sans-serif; 
+        margin: 0 10px; 
+    }
+    button {
+        background-color: var(--text-color-dark);
+        padding: 0px 20px; 
+        transition-duration: 0.4s;
+        border: none;
+        margin: 10px; 
+    }
+    button:hover {
+        background-color: var(--text-color-orange);
+    }
+    .add-recipe {
+        text-decoration: none;
+        color: var(--background-color-light); 
+        padding: 15px 10px; 
+    }
+    .add-recipe:hover {
+        color: var(--background-color-dark); 
+    }
+    table {
+        width: 100%;  
+        border: 3px solid var(--text-color-dark);
+    }
+    table, th, td {
+        border: 1px solid var(--text-color-dark); 
+    }
+    .edit, .tableheading {
+        background-color: var(--text-color-dark);
+        font: normal 16px/23px  'Inter', sans-serif;
+        color: var(--background-color-light); 
+        padding: 5px; 
+    }
+    a {
+        color: var(--text-color-orange); 
+        padding: 20px; 
+    }
+    .nav-bar, .navbar, .mb-8 {
+        display: block; 
+    }
+    img {
+        max-width: 60px; 
+    }
+    tr td {
+        font: normal 13px/23px  'Inter', sans-serif;
+    }
+}
+@media screen and (min-width:768px) {
+    span {
+        font: normal 26px/30px 'Inter', sans-serif;
+    }
+    h1 {
+        font: normal 36px/46px 'Inter', sans-serif;
+        margin: 0 20px;  
+    }
+    .change-font {
+        font: italic 36px/46px 'clifton', serif; 
+    }
+    p {
+        font: normal 26px/36px 'Inter', sans-serif;
+        margin: 10px 20px;  
+    }
+    button{
+        margin: 10px 20px;  
+    }
+    table {
+        margin: 20px 0;  
+    }
+    .credit {
+        font: normal 16px/26px 'Inter', sans-serif;
+    }
+}
+@media screen and (min-width: 1440px) { 
+    h1 {
+        font: normal 60px/70px 'Inter', sans-serif;
+        margin: 0 20px;  
+    }
+    .change-font {
+        font: italic 60px/70px 'clifton', serif; 
+    }
+    .add-recipe {
+        font: normal 26px/36px 'Inter', sans-serif; 
+    }
+    a {
+        font: normal 30px/40px 'Inter', sans-serif; 
+    }
+}
+

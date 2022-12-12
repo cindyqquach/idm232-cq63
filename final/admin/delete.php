@@ -8,11 +8,11 @@ if (isset($_GET['id'])) {
  
 // get users data from database
 $query = "DELETE FROM recipes WHERE id = {$id}";
-$result = mysqli_query($db_connection, $query);
+$results = mysqli_query($db_connection, $query);
  
 // Check there are no errors with our SQL statement
-if ($result) {
-   redirect_to('/admin/users');
+if ($results) {
+   redirect_to('/admin');
 } else {
    $error_message = 'Could Not Delete Recipe';
    redirect_to('/admin/users?error=' . $error_message);

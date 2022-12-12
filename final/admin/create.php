@@ -1,31 +1,25 @@
-
+<link rel="stylesheet" href="/dist/styles/nav.css">
+<link rel="stylesheet" href="/dist/styles/create.css">
 <?php
- 
  include_once __DIR__ . '/../app.php';
  $page_title = 'Create Recipe';
  include_once __DIR__ . '/../_components/header.php';
- ?>
+?>
   
- <?php
- // get recipes data from database
- $query = 'SELECT * FROM users';
- // var_dump($query);
- // die();
- $result = mysqli_query($db_connection, $query);
-  
- // var_dump($result);
-  
- ?>
-
-    <div>
-        <h1>Create Recipe</h1>
+ 
+    <div class="title-block">
+        <h1 class="title">Create <span class="change-font">Recipe </span></h1>
     <div>
           
-    <div>
+    <div class="big-form">
         <form class="form" action="<?php echo site_url(); ?>/_includes/process-create-recipes.php" method="POST">
-          <div class="block">
+        <div class="block">
+            <label class="form-label" for="">Image Path</label>
+            <input type="text" name="image_path">
+          </div>    
+        <div class="block">
             <label class="form-label" for="">Recipe Title:</label>
-            <input type="text" name="recipe_title">
+            <input type="text" name="recipe_name">
           </div>    
           <div class="block">
             <label class="form-label" for="">Overview:</label>
@@ -39,8 +33,7 @@
             <label class="form-label" for="">Instructions:</label>
             <input type="text" name="instructions">
           </div>
-          <input
-            type="submit" value="Add Recipe">
+          <input type="submit" value="Add Recipe +">
         </form>
     </div>
 
