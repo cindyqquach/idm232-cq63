@@ -1,0 +1,94 @@
+:root {
+    --background-color-light: #E9E6D5; 
+    --background-color-dark: #E3C7C4; 
+    --text-color-dark: #3D3B2E; 
+    --text-color-orange: #E74316; 
+}
+*{
+    box-sizing: border-box;
+    font-size: 100%;
+    font-family: 'clifton', serif; 
+    font-family: 'Inter', sans-serif;
+    font-family: 'degular', sans-serif;
+    scroll-behavior: smooth;
+    background-color: var(--background-color-dark);
+    
+}
+
+@media screen and (min-width: 0px) { 
+    body {
+        background-color: var(--background-color-dark);
+    }
+    .big-form, .title-block {
+        margin: 10px; 
+    }
+    .title {
+        font: normal 26px/36px 'Inter', sans-serif; 
+        color: var(--text-color-orange); 
+        padding: 0; 
+    }
+    .change-font {
+        font: italic 26px/36px 'clifton', serif; 
+        display: inline; 
+        color: var(--text-color-orange); 
+    }
+    .form-label {
+        font: bold 16px/36px 'Inter', sans-serif; 
+        color: var(--text-color-dark); 
+    }
+    label, input {
+        display: block; 
+    }
+    input[type=text] {
+        width: 100%;
+        height: 60px;
+        padding: 12px 20px;
+        box-sizing: border-box;
+        border: 2px solid var(--text-color-dark); 
+        border-radius: 5px; 
+    }
+    input[type=text]:focus {
+        color: var(--text-color-orange);
+        border: 2px solid var(--text-color-orange);
+    }
+    input[type=submit] {
+        background-color: var(--text-color-dark);
+        color: var(--background-color-light);
+        padding: 20px 30px; 
+        transition-duration: 0.4s;
+        border: none;
+        margin: 20px 0; 
+    }
+    input[type=submit]:hover {
+        background-color: var(--text-color-orange);
+    }
+    .credit {
+        font: normal 13px/23px 'Inter', sans-serif;
+    }
+}
+@media screen and (min-width:768px) {
+    .title {
+        font: normal 36px/46px 'Inter', sans-serif;
+        margin: 0 20px;  
+    }
+    .change-font {
+        font: italic 36px/46px 'clifton', serif; 
+    }
+    .form-label {
+        font: normal 26px/36px 'Inter', sans-serif;
+        margin: 10px 20px;  
+    }
+    input[type=text] {
+        width: 95%; 
+        height: 60px;
+        padding: 12px 20px;
+        margin: 0 20px; 
+    }
+    input[type=submit]{
+        margin: 30px 20px;  
+    }
+    .credit {
+        font: normal 16px/26px 'Inter', sans-serif;
+        margin: 20px 30px; 
+    }
+}

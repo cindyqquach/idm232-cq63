@@ -1,0 +1,41 @@
+:root {
+    --background-color-light: #E9E6D5; 
+    --background-color-dark: #E3C7C4; 
+    --text-color-dark: #3D3B2E; 
+    --text-color-orange: #E74316; 
+}
+*{
+    box-sizing: border-box;
+    font-size: 100%;
+    font-family: 'clifton', serif; 
+    font-family: 'Inter', sans-serif;
+    font-family: 'degular', sans-serif;
+    scroll-behavior: smooth;
+}
+@media screen and (min-width: 0px) {
+    .logo {
+        display: block; 
+        width: 10%; 
+        height: auto; 
+        margin: 0 auto; 
+        padding: 20px 0 0 0; 
+        background-color: transparent;
+    }
+    .menu-tab {
+        display: inline-block;
+    }
+    span {
+        font: normal 16px/26px  'Inter', sans-serif; 
+        color: var(--text-color-dark); 
+    }
+    a {
+        display: block;
+        text-decoration: none;
+    }
+    a:hover {
+        color: var(--text-color-orange); 
+    }
+    .nav-bar, .navbar, .mb-8 {
+        display: block; 
+    }
+}

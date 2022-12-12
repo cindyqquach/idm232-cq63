@@ -1,0 +1,65 @@
+:root {
+    --background-color-light: #E9E6D5; 
+    --background-color-dark: #E3C7C4; 
+    --text-color-dark: #3D3B2E; 
+    --text-color-orange: #E74316; 
+}
+*{
+    box-sizing: border-box;
+    font-size: 100%;
+    font-family: 'clifton', serif; 
+    font-family: 'Inter', sans-serif;
+    font-family: 'degular', sans-serif;
+    scroll-behavior: smooth;
+    background-color: var(--background-color-dark);
+}
+
+@media screen and (min-width: 0px) {
+/* MARQUEE */
+    .marquee {
+        display: flex; 
+        align-items: center;
+    }
+    .marquee-box {
+        padding: 5px 0; 
+    }
+    .marquee-text {
+        width: 60%; 
+    }
+    .marquee-img {
+        width: 15%;
+        padding: 0 2px; 
+    }
+    .hero{
+        width: 100vw; 
+        margin: 10px 0; 
+    }
+/* RECIPE */
+    .recipe-menu, tbody {
+        background-color: var(--background-color-light);
+    }
+    td {
+        font: normal 16px/26px  'clifton-italic', serif; 
+    }
+    
+/* FOOTER  */
+    .credit {
+        font: normal 13px/23px  'Inter', sans-serif; 
+        text-align: center;
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .marquee-text {
+        width: 40%; 
+        margin: 0 40px; 
+    }
+    .marquee-img {
+        width: 9%;
+        padding: 0 2px; 
+    }
+    td {
+        font: normal 36px/36px  'clifton-italic', serif; 
+    }
+}
